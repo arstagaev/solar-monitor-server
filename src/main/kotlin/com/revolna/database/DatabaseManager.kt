@@ -19,7 +19,7 @@ class DatabaseManager {
     private var username     = "postgres"
     private var password     = "1997"
 
-    //config db remote
+    //config db remote. PLEASE WRITE HERE YOUS KEYS
     private var rem_hostname     =  HOSTNAME_HIDE
     private var rem_databaseName =  DATABASE_NAME_HIDE
     private var rem_username     =  USERNAME_HIDE

@@ -1,7 +1,7 @@
 package com.revolna
 
 object Keys {
-    // Keys  what not showed in git
+    // Keys  what not showed in git.
     var HOSTNAME_HIDE      = "ec2-34-247-249-224.eu-west-1.compute.amazonaws.com"
     var DATABASE_NAME_HIDE = "d73vg6mfudbqom"
     var USERNAME_HIDE      = "eniyufrzgmqwyg"
