@@ -4,6 +4,10 @@ import com.revolna.Keys.DATABASE_NAME_HIDE
 import com.revolna.Keys.HOSTNAME_HIDE
 import com.revolna.Keys.PASSWORD_HIDE
 import com.revolna.Keys.USERNAME_HIDE
+import com.revolna.PRIVATE_KEYS.DATABASE_NAME_HIDE
+import com.revolna.PRIVATE_KEYS.HOSTNAME_HIDE
+import com.revolna.PRIVATE_KEYS.PASSWORD_HIDE
+import com.revolna.PRIVATE_KEYS.USERNAME_HIDE
 import com.revolna.entities.Telemetry
 import com.revolna.entities.TelemetryDraft
 import org.ktorm.database.Database

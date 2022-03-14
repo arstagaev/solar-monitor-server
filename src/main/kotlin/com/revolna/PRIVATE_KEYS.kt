@@ -1,6 +1,6 @@
 package com.revolna
 
-object Keys {
+object PRIVATE_KEYS {
     // Keys  what not showed in git.
     var HOSTNAME_HIDE      = "ec2-34-247-249-224.eu-west-1.compute.amazonaws.com"
     var DATABASE_NAME_HIDE = "d73vg6mfudbqom"
