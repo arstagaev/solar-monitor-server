@@ -1,9 +1,24 @@
 package com.revolna
 
+import java.io.FileInputStream
+import java.util.*
+
 object PRIVATE_KEYS {
     // Keys  what not showed in git.
-    var HOSTNAME_HIDE      = "ec2-34-247-249-224.eu-west-1.compute.amazonaws.com"
-    var DATABASE_NAME_HIDE = "d73vg6mfudbqom"
-    var USERNAME_HIDE      = "eniyufrzgmqwyg"
-    var PASSWORD_HIDE      = "11c6f880de0ab0208268eec2b94d3ed5e9fe70c7aaa888bb92f759c7b5739f76"
+    val configFilePath = "local.properties"
+    val propsInput = FileInputStream(configFilePath)
+    val properties = Properties()
+
+
+    var HOSTNAME_HIDE      = loadConfig("HOSTNAME_HIDE")
+    var DATABASE_NAME_HIDE = loadConfig("DATABASE_NAME_HIDE")
+    var USERNAME_HIDE      = loadConfig("USERNAME_HIDE")
+    var PASSWORD_HIDE      = loadConfig("PASSWORD_HIDE")
+
+    fun loadConfig(parameter : String) : String {
+        properties.load(propsInput)
+        println("<<<<<<<> ${properties.getProperty(parameter)}")
+        return properties.getProperty(parameter)
+    }
 }
+
