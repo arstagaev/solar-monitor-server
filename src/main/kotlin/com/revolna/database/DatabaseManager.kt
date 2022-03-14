@@ -1,5 +1,9 @@
 package com.revolna.database
 
+import com.revolna.Keys.DATABASE_NAME_HIDE
+import com.revolna.Keys.HOSTNAME_HIDE
+import com.revolna.Keys.PASSWORD_HIDE
+import com.revolna.Keys.USERNAME_HIDE
 import com.revolna.entities.Telemetry
 import com.revolna.entities.TelemetryDraft
 import org.ktorm.database.Database
@@ -10,16 +14,16 @@ import org.ktorm.entity.toList
 class DatabaseManager {
 
     // config
-    private var hostname = "localhost"
+    private var hostname     = "localhost"
     private var databaseName = "piz"
-    private var username = "postgres"
-    private var password = "1997"
+    private var username     = "postgres"
+    private var password     = "1997"
 
     //config db remote
-    private var rem_hostname     = "ec2-34-247-249-224.eu-west-1.compute.amazonaws.com"
-    private var rem_databaseName = "d73vg6mfudbqom"
-    private var rem_username     = "eniyufrzgmqwyg"
-    private var rem_password     = "11c6f880de0ab0208268eec2b94d3ed5e9fe70c7aaa888bb92f759c7b5739f76"
+    private var rem_hostname     =  HOSTNAME_HIDE
+    private var rem_databaseName =  DATABASE_NAME_HIDE
+    private var rem_username     =  USERNAME_HIDE
+    private var rem_password     =  PASSWORD_HIDE
 
     //db
     private val ktormDatabase : Database
