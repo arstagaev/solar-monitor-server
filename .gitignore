@@ -1,2 +1,4 @@
-/src/main/kotlin/com/revolna/PRIVATE_KEYS.kt
-
+local.properties
+/local.properties
+config.properties
+/config.properties

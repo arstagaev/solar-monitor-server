@@ -12,6 +12,8 @@ group = "com.revolna"
 version = "0.0.1"
 application {
     mainClass.set("com.revolna.ApplicationKt")
+    project.properties["s3SecretKey"].toString()
+
 }
 tasks.create("stage") {
     dependsOn("installDist")
